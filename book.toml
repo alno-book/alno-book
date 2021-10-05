@@ -1,0 +1,6 @@
+[book]
+authors = ["Federico Izzo", "Simone Alghisi", "Francesco Bozzo"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Algorithm notes"
