@@ -18,6 +18,8 @@ jobs:
 
       - name: embedding-phase
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           npm install -g embedme
           find -type f -name '*.md' -exec embedme {} \;
           git add *
