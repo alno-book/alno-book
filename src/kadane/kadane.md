@@ -3,13 +3,13 @@ Kadane algorithm find the maximum sum of contiguous elements inside an array
 
 ## Implementations
 ### Python
-```rust
-// src/kadane/implementations/kadane.py
+```python
+# src/kadane/implementations/kadane.py
 ```
 
 ### Rust
-```python
-# kadane/implementations/kadane.rs
+```rust
+// src/kadane/implementations/kadane.rs
 ```
 
 ##### Input
