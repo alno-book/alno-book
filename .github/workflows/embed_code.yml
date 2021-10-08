@@ -29,4 +29,4 @@ jobs:
           git checkout -b embed-code
           git reset --hard master
           find -type f -name '*.md' -exec npx embedme {} \;
-          git push
+          git push --set-upstream origin embed-code
