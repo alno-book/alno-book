@@ -26,7 +26,11 @@ jobs:
 
       - name: embedding-phase
         run: |
-          git checkout -b embed-code
-          git reset --hard master
           find -type f -name '*.md' -exec npx embedme {} \;
-          git push --set-upstream origin embed-code
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: embedded-code
+          forse: true
