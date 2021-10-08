@@ -1,4 +1,4 @@
-name: Embed code in README
+name: Embed code
 
 on:
   push:
@@ -23,13 +23,10 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
           ref: master
-      - run: |
+
+      - name: embedding-phase
+        run:
           git checkout -b embed-code
           git reset --hard master
-
-      - uses: tokusumi/markdown-embed-code@main
-        with:
-          markdown: "src/kadane/kadane.md"
-          token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Add embed-code"
-          silent: true
+          find -type f -name '*.md' -exec npx embedme {} \;
+          git push
