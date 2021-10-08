@@ -3,7 +3,7 @@ Kadane algorithm find the maximum sum of contiguous elements inside an array
 
 ## Implementations
 ### Python
-```python
+```py
 # implementations/kadane.py
 ```
 

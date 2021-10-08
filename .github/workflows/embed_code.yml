@@ -18,7 +18,8 @@ jobs:
 
       - name: embedding-phase
         run: |
-          find -type f -name '*.md' -exec npx embedme {} \;
+          npm install -g embedme
+          find -type f -name '*.md' -exec embedme {} \;
 
       - name: Push changes
         uses: ad-m/github-push-action@master
