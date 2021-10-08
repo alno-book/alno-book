@@ -34,7 +34,10 @@ jobs:
       - name: building
         run: |
           curl -sL 'https://github.com/rust-lang/mdBook/releases/download/v0.4.13/mdbook-v0.4.13-x86_64-unknown-linux-gnu.tar.gz' | tar xz
-          ./mdbook build -d .
+          ./mdbook build
+          ls | grep -v book | xargs rm -rf
+          mv book/* .
+          rm -rf book
 
       - name: git-commit
         run: |
