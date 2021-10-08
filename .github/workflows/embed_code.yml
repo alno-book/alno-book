@@ -20,6 +20,9 @@ jobs:
         run: |
           npm install -g embedme
           find -type f -name '*.md' -exec embedme {} \;
+          git add *
+          git commit -m "Embed code"
+
 
       - name: Push changes
         uses: ad-m/github-push-action@master
