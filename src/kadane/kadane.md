@@ -1,5 +1,5 @@
 # Kadane
-Kadane algorithm find the maximum sum of contiguous elements inside an array
+Kadane algorithm finds the maximum sum of contiguous elements inside an array
 
 ## Implementations
 ### Python
