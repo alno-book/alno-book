@@ -16,19 +16,34 @@ jobs:
           fetch-depth: 0
           ref: master
 
-      - name: embedding-phase
+      - name: git-setup
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
+      - name: embedding-phase
+        run: |
           npm install -g embedme
           find -type f -name '*.md' -exec embedme {} \;
+
+      - name: embedding-phase
+        run: |
+          npm install -g embedme
+          find -type f -name '*.md' -exec embedme {} \;
+
+      - name: building
+        run: |
+          curl -sL 'https://github.com/rust-lang/mdBook/releases/download/v0.4.13/mdbook-v0.4.13-x86_64-unknown-linux-gnu.tar.gz' | tar xz
+          ./mdbook build -d .
+
+      - name: git-commit
+        run: |
           git add *
           git commit -m "Embed code"
-
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: embedded-code
+          branch: github-pages
           force: true
