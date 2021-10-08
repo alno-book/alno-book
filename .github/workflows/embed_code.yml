@@ -1,0 +1,28 @@
+name: Embed code in README
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  embed-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+          persist-credentials: false
+          fetch-depth: 0
+          ref: refs/heads/${{ github.head_ref }}
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.PAT}}
+      - run: |
+          git checkout -b embed-code
+          git reset --hard master
+
+      - uses: tokusumi/markdown-embed-code@main
+        with:
+          markdown: "src/kadane/kadane.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Add embed-code"
+          silent: true
