@@ -1,4 +1,4 @@
-def max_sum_Kadame(values: List[int]) -> int:
+def max_sum_Kadane(values: List[int]) -> int:
     max_so_far = 0
     max_here = 0
     for v in values:

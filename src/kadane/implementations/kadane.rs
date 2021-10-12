@@ -1,6 +1,6 @@
 use std::cmp::max;
 
-fn max_sum_Kadame(values: Vec<i32>) -> i32 {
+fn max_sum_Kadane(values: Vec<i32>) -> i32 {
     let mut max_so_far = 0;
     let mut max_here = 0;
     for &i in values.iter() {
