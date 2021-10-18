@@ -13,7 +13,7 @@ $('.pseudocode').pseudocode({
         'max': '#b8212f',
         'min': '#b8212f',
         'structure': '#b8212f',
-        'attributes': '#b8212f',
-        'methods': '#b8212f',
+        'attributes:': '#b8212f',
+        'methods:': '#b8212f',
     }
 });

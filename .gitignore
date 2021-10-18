@@ -1,2 +1,4 @@
 .envrc
 book
+__pycache__
+.python-version

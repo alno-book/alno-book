@@ -1,3 +1,7 @@
+from __future__ import annotations
+from typing import Any, Optional
+
+
 class Tree:
     def __init__(self, value: Any) -> None:
         self.value = value
@@ -6,12 +10,12 @@ class Tree:
         self.right: Optional[Tree] = None
 
     def insert_left(self, t: Tree):
-        if self.left is  None:
+        if self.left is None:
             t.parent = self
             self.left = t
 
     def insert_right(self, t: Tree):
-        if self.right is  None:
+        if self.right is None:
             t.parent = self
             self.right = t
 
