@@ -1,6 +1,15 @@
 # Binary
 A binary tree is a rooted tree in which each node has at most two children, they are identified as left and right child.
 
+```mermaid
+flowchart TD;
+    A((A)) --> B((B))
+    A((A)) --> C((C))
+    B --> D((D))
+    B --> E((E))
+    C --> F((F))
+```
+
 ## Pseudocode
 <pre class="pseudocode">
 structure Tree
