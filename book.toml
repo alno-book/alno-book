@@ -5,14 +5,18 @@ multilingual = false
 src = "src"
 title = "Algorithm notes"
 
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
 [output.html]
 mathjax-support = true
 default-theme = "navy"
 additional-js = [
     "src/bin/assets/jquery-3.6.0.min.js",
     "src/bin/assets/jquery-pseudocode.js",
-    "src/bin/assets/jquery-pseudocode-init.js"
-    ]
+    "src/bin/assets/jquery-pseudocode-init.js",
+    "src/bin/assets/mermaid.min.js",
+    "src/bin/assets/mermaid-init.js"]
 additional-css = ["src/bin/assets/jquery-pseudocode.css"]
 
 [output.html.playground]
