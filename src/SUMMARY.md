@@ -6,3 +6,5 @@
     - [Binary](./tree/binary/binary_tree.md)
         - [DFS](./tree/binary/search/dfs.md)
     - [Red-Black](./tree/red-black/red-black_tree.md)
+- [Graphs](./graphs/graphs.md)
+
