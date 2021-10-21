@@ -7,4 +7,7 @@
         - [DFS](./tree/binary/search/dfs.md)
     - [Red-Black](./tree/red-black/red-black_tree.md)
 - [Graphs](./graphs/graphs.md)
+    - [DFS](./graphs/search/dfs.md)
+    - [BFS](./graphs/search/bfs.md)
+
 
