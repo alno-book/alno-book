@@ -8,6 +8,8 @@ if (
             // green
             'max': '#008200',
             'min': '#008200',
+            'true': '#008200',
+            'false': '#008200',
             // yellow
             'for': '#e5c07b',
             'in': '#e5c07b',
@@ -17,6 +19,10 @@ if (
             'else': '#e5c07b',
             'elif': '#e5c07b',
             'var': '#e5c07b',
+            'while': '#e5c07b',
+            'foreach': '#e5c07b',
+            'not': '#e5c07b',
+            'do': '#e5c07b',
             // light blue
             'function': '#52adf2',
             // light red
@@ -32,6 +38,8 @@ if (
             // red
             'max': '#b8212f',
             'min': '#b8212f',
+            'true': '#b8212f',
+            'false': '#b8212f',
             // purple
             'for': '#a42fa2',
             'in': '#a42fa2',
@@ -41,6 +49,10 @@ if (
             'else': '#a42fa2',
             'elif': '#a42fa2',
             'var': '#a42fa2',
+            'while': '#a42fa2',
+            'foreach': '#a42fa2',
+            'not': '#a42fa2',
+            'do': '#a42fa2',
             // light blue
             'function': '#1485ba',
             'this': '#1485ba',
