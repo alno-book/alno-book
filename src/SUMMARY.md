@@ -9,5 +9,6 @@
 - [Graphs](./graphs/graphs.md)
     - [DFS](./graphs/search/dfs.md)
     - [BFS](./graphs/search/bfs.md)
+    - [Erdos](./graphs/search/erdos.md)
 
 
