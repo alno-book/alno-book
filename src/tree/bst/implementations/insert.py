@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from typing import Union
+from binary_search_tree import BinarySearchTree
+
 
 def insert(tree: BinarySearchTree, key: Union[int, float], value: Union[int, float]):
     t = tree
@@ -15,6 +17,7 @@ def insert(tree: BinarySearchTree, key: Union[int, float], value: Union[int, flo
     else:
         new_tree = BinarySearchTree(key, value)
         link(parent, new_tree, key)
+
 
 def link(top: BinarySearchTree, bottom: BinarySearchTree, key: Union[int, float]):
     if key < top.key:
