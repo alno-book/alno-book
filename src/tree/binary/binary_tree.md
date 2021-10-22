@@ -12,7 +12,7 @@ flowchart TD;
 
 ## Pseudocode
 <pre class="pseudocode">
-structure Tree
+structure BinaryTree
     attributes:
         Item value
         Tree parent

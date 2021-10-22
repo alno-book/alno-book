@@ -2,19 +2,19 @@ from __future__ import annotations
 from typing import Any, Optional
 
 
-class Tree:
+class BinaryTree:
     def __init__(self, value: Any) -> None:
         self.value = value
-        self.parent: Optional[Tree] = None
-        self.left: Optional[Tree] = None
-        self.right: Optional[Tree] = None
+        self.parent: Optional[BinaryTree] = None
+        self.left: Optional[BinaryTree] = None
+        self.right: Optional[BinaryTree] = None
 
-    def insert_left(self, t: Tree):
+    def insert_left(self, t: BinaryTree):
         if self.left is None:
             t.parent = self
             self.left = t
 
-    def insert_right(self, t: Tree):
+    def insert_right(self, t: BinaryTree):
         if self.right is None:
             t.parent = self
             self.right = t
