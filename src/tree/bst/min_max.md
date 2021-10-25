@@ -56,6 +56,8 @@ In a binary search tree the node with the lowest (or highest) key will simply be
 ## Complexity
 With \\(n\\) number of nodes in the tree, the time complexity is \\(O(n)\\).
 
+Under the assumption that the binary tree is balanced, the complexity is \\(O(\log n)\\).
+
 ## Implementations
 ### Python
 ```py

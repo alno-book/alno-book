@@ -61,8 +61,8 @@ function link(Tree top, Tree bottom, Item k)
 ## Explanation
 
 ## Complexity
-With \\(n\\) nodes of the original tree the time complexity is:
-$$O(n)$$
+With \\(n\\) nodes of the original tree the time complexity is \\(O(n)\\).
+
 This is the worst case when elements are inserted ordered
 ```mermaid
 flowchart TD;
@@ -71,6 +71,7 @@ flowchart TD;
     C --> D((4))
     D --> E((5))
 ```
+Under the assumption that the binary tree is balanced, the complexity is \\(O(\log n)\\).
 
 ## Implementations
 ### Python
